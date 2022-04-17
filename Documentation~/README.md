@@ -52,7 +52,7 @@ Simple UI Transitions uses the free DoTween package as the base for the Tweening
 DoTween will NOT be automatically installed by Simple UI Transitions to avoid problems with colliding package names. 
 More information about DoTween can be found here: http://dotween.demigiant.com/index.php
 
-Also, Simple UI Transitions has some useful In-Editor-Buttons for turning transitions on and off, along with creating positions references; These are only available if you have OdinInspector (http://dotween.demigiant.com/index.php) in your project
+Also, Simple UI Transitions has some useful In-Editor-Buttons for turning transitions on and off, along with creating positions references; These are only available if you have OdinInspector (https://odininspector.com/) in your project
 
 
 ## Features
