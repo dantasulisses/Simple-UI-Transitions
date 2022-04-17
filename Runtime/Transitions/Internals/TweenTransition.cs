@@ -28,5 +28,9 @@ namespace Uli.Transition
 
             base.DoTween(doEnable);
         }
+        public override void ToggleState()
+        {
+            DoTween(!hasEntered);
+        }
     }
 }

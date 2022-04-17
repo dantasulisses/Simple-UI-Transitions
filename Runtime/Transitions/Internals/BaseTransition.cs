@@ -35,13 +35,27 @@ namespace Uli.Transition
             if (doOnStart)
                 DoTween(true);
         }
+        /// <summary>
+        /// Sets the object directly to its end state, without doing the transition
+        /// </summary>
+        /// <param name="doEnable"></param>
         public virtual void SetState(bool doEnable)
         {
             hasEntered = doEnable;
         }
+        /// <summary>
+        /// Makes the object do the transition
+        /// </summary>
+        /// <param name="doEnable">True = Enter, False = Exit</param>
         public virtual void DoTween(bool doEnable)
         {
             hasEntered = doEnable;
+        }
+        /// <summary>
+        /// Toggles the current transition (if it has entered, it exits. If is has not, the transition enters)
+        /// </summary>
+        public virtual void ToggleState()
+        {
         }
     }
 }

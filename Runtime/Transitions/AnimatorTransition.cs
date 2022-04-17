@@ -32,5 +32,9 @@ namespace Uli.Transition
                 myAnimator.SetBool(animatorEnablePropertyName, doEnable);
             }
         }
+        public override void ToggleState()
+        {
+            DoTween(!hasEntered);
+        }
     }
 }

@@ -59,6 +59,10 @@ namespace Uli.Transition
                 TargetCanvas.DOFade(alphaRefs[0], movementTime).SetDelay(enterDelay).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true).OnComplete(() => EnableObject(false));
             }
         }
+        public override void ToggleState()
+        {
+            DoTween(!hasEntered);
+        }
         private void EnableObject(bool doEnable)
         {
             if (disableGOWhenDone)

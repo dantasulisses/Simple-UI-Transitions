@@ -32,5 +32,9 @@ namespace Uli.Transition
             else
                 objectToTween.DOScale(scaleRefs[0], movementTime).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true);
         }
+        public override void ToggleState()
+        {
+            DoTween(!hasEntered);
+        }
     }
 }

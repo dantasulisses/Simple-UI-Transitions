@@ -61,5 +61,9 @@ namespace Uli.Transition
             else
                 objectToTween.DOMove(moveRefs[0].position, movementTime).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true);
         }
+        public override void ToggleState()
+        {
+            DoTween(!hasEntered);
+        }
     }
 }
