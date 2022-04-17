@@ -24,10 +24,12 @@ Simple UI Transitions is a small package that wraps simple animation behaviours 
 
 Instead of manually controlling which elements are currently being shown on the screen or not, and writing the same Tween functions in reverse, just add one of the Transition components and from your code call:
 ```csharp
-    //Make the transition enter
-    someTransition.DoTween(true);
-    //Make the transition exit
-    someTransition.DoTween(false);
+    //Make the transition enter/exit
+    someTransition.DoTween(true/false);
+    //Toggle the object transition (quits if has entered; enters if has not)
+    someTransition.ToggleState();
+    //Change the object to it's transition end state, without doing the animation/tween
+    someTransition.SetState(true/false);
 ```
 
 
