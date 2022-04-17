@@ -1,25 +1,21 @@
 {
-    "name": "com.[company-name].[package-name]",
-    "version": "1.2.3",
-    "displayName": "Package Example",
-    "description": "This is an example package",
-    "unity": "2019.1",
-    "unityRelease": "0b5",
-    "documentationUrl": "https://example.com/",
-    "changelogUrl": "https://example.com/changelog.html",
-    "licensesUrl": "https://example.com/licensing.html",
-    "dependencies": {
-        "com.[company-name].some-package": "1.0.0",
-        "com.[company-name].other-package": "2.0.0"
-    },
-    "keywords": [
-        "keyword1",
-        "keyword2",
-        "keyword3"
-    ],
-    "author": {
-        "name": "Unity",
-        "email": "unity@example.com",
-        "url": "https://www.unity3d.com"
-    }
+  "name": "com.uli.uitransitions",
+  "version": "1.0.0",
+  "displayName": "Simple UI Transitions",
+  "description": "Simple UI Transitions is a set of custom component wrappers to easily doing animated Show/Hide behaviour for UI elements in Unity",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/dantasulisses/Simple-UI-Transitions",
+  "changelogUrl": "https://github.com/dantasulisses/Simple-UI-Transitions/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/dantasulisses/Simple-UI-Transitions/blob/main/LICENSE.md",
+  "keywords": [
+    "tween",
+    "ui",
+    "transitions"
+  ],
+  "author": {
+    "name": "Ulisses Dantas",
+    "email": "ulisses.s.dantas@gmail.com",
+    "url": "https://www.ulidantas.com/"
+  }
 }
