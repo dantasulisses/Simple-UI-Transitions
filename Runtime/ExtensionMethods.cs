@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Uli.Extensions
 {
-    public static class ExtensionMethods
+    public static partial class ExtensionMethods
     {
         /// <summary>
         /// Copies position, scale and rotation from another Transform
@@ -93,20 +93,6 @@ namespace Uli.Extensions
             comp.minWidth = copyFrom.minWidth;
             comp.preferredHeight = copyFrom.preferredHeight;
             comp.preferredWidth = copyFrom.preferredWidth;
-        }
-        /// <summary>
-        /// Set the object and all his children to target layer
-        /// </summary>
-        /// <param name="parent"></param>
-        /// <param name="layer"></param>
-        public static void SetLayerRecursively(this Transform parent, int layer)
-        {
-            parent.gameObject.layer = layer;
-
-            for (int i = 0, count = parent.childCount; i < count; i++)
-            {
-                parent.GetChild(i).SetLayerRecursively(layer);
-            }
         }
     }
 }
