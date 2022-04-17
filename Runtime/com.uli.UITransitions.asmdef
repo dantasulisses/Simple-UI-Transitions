@@ -1,5 +1,5 @@
 {
-    "name": "Unity.PackageExample",
+    "name": "com.uli.UITransitions",
     "rootNamespace": "",
     "references": [
         "DOTween.Modules"
