@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Uli.Extensions
+namespace Uli.Transition
 {
-    public static partial class ExtensionMethods
+    public static class ExtensionMethods
     {
         /// <summary>
         /// Copies position, scale and rotation from another Transform

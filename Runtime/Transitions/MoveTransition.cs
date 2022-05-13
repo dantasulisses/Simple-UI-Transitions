@@ -1,6 +1,5 @@
 ﻿using DG.Tweening;
 using UnityEngine;
-using Uli.Extensions;
 #if ODIN_INSPECTOR
 using Sirenix.OdinInspector;
 #endif
