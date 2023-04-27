@@ -54,9 +54,13 @@ namespace Uli.Transition
             }
             else
             {
-                //Desliga antes do tween
                 EnableInteractions(false);
-                TargetCanvas.DOFade(alphaRefs[0], movementTime).SetDelay(enterDelay).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true).OnComplete(() => EnableObject(false));
+                TargetCanvas.DOFade(alphaRefs[0], movementTime).SetDelay(enterDelay).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true).OnComplete(() => 
+                {
+                    //Extra check in case of simultaneously cancelling(killing) the current fade-out and doing a fade-in
+                    if (hasEntered == false)
+                        EnableObject(false);
+                });
             }
         }
         public override void ToggleState()
