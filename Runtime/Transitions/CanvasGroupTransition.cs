@@ -50,11 +50,13 @@ namespace Uli.Transition
             if (doEnable)
             {
                 EnableObject(true);
+                EnableBlockRaycasts(true);
                 TargetCanvas.DOFade(alphaRefs[1], movementTime).SetDelay(enterDelay).SetEase(tweenType).SetDelay(enterDelay).SetUpdate(true).OnComplete(() => EnableInteractions(true));
             }
             else
             {
                 EnableInteractions(false);
+                EnableBlockRaycasts(false);
                 TargetCanvas.DOFade(alphaRefs[0], movementTime).SetDelay(enterDelay).SetEase(tweenType).SetDelay(exitDelay).SetUpdate(true).OnComplete(() => 
                 {
                     //Extra check in case of simultaneously cancelling(killing) the current fade-out and doing a fade-in
@@ -75,6 +77,9 @@ namespace Uli.Transition
         private void EnableInteractions(bool doEnable)
         {
             TargetCanvas.interactable = doEnable;
+        }
+        private void EnableBlockRaycasts(bool doEnable)
+        {
             TargetCanvas.blocksRaycasts = doEnable;
         }
     }
