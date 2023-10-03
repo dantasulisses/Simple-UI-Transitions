@@ -31,12 +31,14 @@ namespace Uli.Transition
             {
                 EnableObject(true);
                 EnableInteractions(true);
+                EnableBlockRaycasts(true);
                 TargetCanvas.alpha = alphaRefs[1];
             }
             else
             {
                 EnableObject(false);
                 EnableInteractions(false);
+                EnableBlockRaycasts(false);
                 TargetCanvas.alpha = alphaRefs[0];
             }
         }
