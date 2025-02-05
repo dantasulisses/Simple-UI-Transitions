@@ -27,18 +27,16 @@ namespace Uli.Transition
 
             base.SetState(doEnable);
 
+            EnableObject(doEnable);
+            EnableInteractions(doEnable);
+            EnableBlockRaycasts(doEnable);
+
             if (doEnable)
             {
-                EnableObject(true);
-                EnableInteractions(true);
-                EnableBlockRaycasts(true);
                 TargetCanvas.alpha = alphaRefs[1];
             }
             else
             {
-                EnableObject(false);
-                EnableInteractions(false);
-                EnableBlockRaycasts(false);
                 TargetCanvas.alpha = alphaRefs[0];
             }
         }
