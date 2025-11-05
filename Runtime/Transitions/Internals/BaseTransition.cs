@@ -22,11 +22,13 @@ namespace Uli.Transition
         private void SetTransitionOn() 
         {
             SetState(true);
+            UnityEditor.EditorUtility.SetDirty(this);
         }
         [Button]
         private void SetTransitionOff()
         {
             SetState(false);
+            UnityEditor.EditorUtility.SetDirty(this);
         }
 #endif
         #endregion

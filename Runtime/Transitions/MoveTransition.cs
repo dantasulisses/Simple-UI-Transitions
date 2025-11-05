@@ -33,6 +33,7 @@ namespace Uli.Transition
                 if (rectTransform != null)
                     ((RectTransform)moveRefs[x]).CopyValuesFrom(rectTransform);
             }
+            UnityEditor.EditorUtility.SetDirty(this);
         }
 #endif
         #endregion
